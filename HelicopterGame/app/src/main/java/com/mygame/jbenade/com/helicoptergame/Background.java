@@ -9,7 +9,9 @@ public class Background {
     private int x, y, dx;
 
     public Background(Bitmap res) {
+
         image = res;
+        dx = GamePanel.MOVESPEED;
     }
 
     public void update() {
@@ -26,7 +28,4 @@ public class Background {
         }
     }
 
-    public void setVector(int dx) {
-        this.dx = dx;
-    }
 }
